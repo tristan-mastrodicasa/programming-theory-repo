@@ -6,10 +6,12 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject enemy;
+    public GameObject quickEnemy;
 
     void Start()
     {
         InvokeRepeating("SpawnEnemy", 2.0f, 1.0f);
+        InvokeRepeating("SpawnQuickEnemy", 2.0f, 5.0f);
     }
 
     public static Vector3 RandomPointInBounds(Bounds bounds) {
@@ -28,5 +30,9 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnEnemy() {
         Instantiate(enemy, RandomPointInBounds(GetComponent<BoxCollider>().bounds), enemy.transform.rotation);
+    }
+
+    void SpawnQuickEnemy() {
+        Instantiate(quickEnemy, RandomPointInBounds(GetComponent<BoxCollider>().bounds), quickEnemy.transform.rotation);
     }
 }
