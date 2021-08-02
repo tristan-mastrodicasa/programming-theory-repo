@@ -792,6 +792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1595428187625136763, guid: e298a1e8b120e4241825e91a35825a67, type: 3}
+      propertyPath: quickEnemy
+      value: 
+      objectReference: {fileID: 4215129521709870654, guid: c1c25200b7a5d414f80c4a013540a285, type: 3}
     - target: {fileID: 4767375146621015108, guid: e298a1e8b120e4241825e91a35825a67, type: 3}
       propertyPath: m_IsTrigger
       value: 1
